@@ -72,8 +72,7 @@ export class LocationFromIP extends LitElement {
     return html`<iframe title="Where you are" src="${url}"></iframe> 
     <a href="https://www.google.com/maps/@40.804,77.910,14z"><p style="text-align:left">Location on Google Maps</a></p>;
     <br>
-      <script>window.__appCDN="https://cdn.webcomponents.psu.edu/cdn/";</script>
-      <script src="https://cdn.webcomponents.psu.edu/cdn/build.js"></script>
+
       <wikipedia-query search="${this.city}"></wikipedia-query>
       <wikipedia-query search="${this.region}"></wikipedia-query>
       <wikipedia-query search="${this.city}, ${this.region}"></wikipedia-query> `;
